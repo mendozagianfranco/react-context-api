@@ -10,6 +10,10 @@ a {
     text-transform: uppercase;
 }
 
+ul {
+    list-style-type: none;
+}
+
 nav {
     display: flex;
     gap: 20px;
