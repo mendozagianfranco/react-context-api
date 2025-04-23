@@ -1,9 +1,8 @@
-import { useContext } from 'react';
-import PostContext from '../contexts/PostContext';
 import PostCard from './PostCard';
+import { usePost } from '../contexts/PostContext';
 
 export default function PostsList() {
-    const postsData = useContext(PostContext);
+    const postsData = usePost();
     return (
         <ul>
             {postsData.map(post => <li key={post.id}>
